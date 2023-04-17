@@ -12,12 +12,28 @@ export default function Techstack() {
           These are some of the techologies I've worked with:
         </h3>
       </div>
-      <div className="grid grid-cols-3 gap-2 mx-6">
-        <Image src={NodejsLogo} className="object-cover" />
-        <Image src={ReactLogo} className="object-cover" />
+      <div className="grid grid-cols-5 gap-2 mx-6">
+        <div className="flex flex-col items-center bg-stone-900 rounded">
+          <div className="flex justify-center w-32 p-3">
+            <Image src={NodejsLogo} />
+          </div>
+          <div className="flex justify-center p-3">
+            <span>Node js</span>
+          </div>
+        </div>
+        <div className="flex flex-col items-center bg-stone-900 rounded">
+          <div className="flex justify-center w-32 p-3">
+            <Image src={ReactLogo} />
+          </div>
+          <div className="flex justify-center p-3">
+            <span>React js</span>
+          </div>
+        </div>
+        {/* 
+        <Image src={} className="object-cover" />
         <Image src={JSLogo} className="object-cover" />
         <Image src={ExpressLogo} className="object-cover" />
-        <Image src={MongoDBLogo} className="object-cover" />
+        <Image src={MongoDBLogo} className="object-cover" /> */}
       </div>
     </>
   );
