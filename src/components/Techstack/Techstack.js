@@ -18,7 +18,7 @@ export default function Techstack() {
             <Image src={NodejsLogo} />
           </div>
           <div className="flex justify-center p-3">
-            <span>Node js</span>
+            <span>Node JS</span>
           </div>
         </div>
         <div className="flex flex-col items-center bg-stone-900 rounded">
@@ -26,14 +26,33 @@ export default function Techstack() {
             <Image src={ReactLogo} />
           </div>
           <div className="flex justify-center p-3">
-            <span>React js</span>
+            <span>React JS</span>
           </div>
         </div>
-        {/* 
-        <Image src={} className="object-cover" />
-        <Image src={JSLogo} className="object-cover" />
-        <Image src={ExpressLogo} className="object-cover" />
-        <Image src={MongoDBLogo} className="object-cover" /> */}
+        <div className="flex flex-col items-center bg-stone-900 rounded">
+          <div className="flex justify-center w-32 p-3">
+            <Image src={JSLogo} />
+          </div>
+          <div className="flex justify-center p-3">
+            <span>Javascript</span>
+          </div>
+        </div>
+        <div className="flex flex-col items-center bg-stone-900 rounded">
+          <div className="flex justify-center w-32 p-3">
+            <Image src={ExpressLogo} />
+          </div>
+          <div className="flex justify-center p-3">
+            <span>Express JS</span>
+          </div>
+        </div>
+        <div className="flex flex-col items-center bg-stone-900 rounded">
+          <div className="flex justify-center w-32 p-3">
+            <Image src={MongoDBLogo} />
+          </div>
+          <div className="flex justify-center p-3">
+            <span>Mongo DB</span>
+          </div>
+        </div>
       </div>
     </>
   );
