@@ -12,10 +12,10 @@ export default function Techstack() {
           These are some of the techologies I've worked with:
         </h3>
       </div>
-      <div className="grid grid-cols-5 gap-2 mx-6">
+      <div className="grid grid-cols-4 gap-2 mx-6">
         <div className="flex flex-col items-center bg-stone-900 rounded">
           <div className="flex justify-center w-32 p-3">
-            <Image src={NodejsLogo} />
+            <Image src={NodejsLogo} alt="" />
           </div>
           <div className="flex justify-center p-3">
             <span>Node JS</span>
@@ -23,7 +23,7 @@ export default function Techstack() {
         </div>
         <div className="flex flex-col items-center bg-stone-900 rounded">
           <div className="flex justify-center w-32 p-3">
-            <Image src={ReactLogo} />
+            <Image src={ReactLogo} alt="" />
           </div>
           <div className="flex justify-center p-3">
             <span>React JS</span>
@@ -31,7 +31,7 @@ export default function Techstack() {
         </div>
         <div className="flex flex-col items-center bg-stone-900 rounded">
           <div className="flex justify-center w-32 p-3">
-            <Image src={JSLogo} />
+            <Image src={JSLogo} alt="" />
           </div>
           <div className="flex justify-center p-3">
             <span>Javascript</span>
@@ -39,7 +39,7 @@ export default function Techstack() {
         </div>
         <div className="flex flex-col items-center bg-stone-900 rounded">
           <div className="flex justify-center w-32 p-3">
-            <Image src={ExpressLogo} />
+            <Image src={ExpressLogo} alt="" />
           </div>
           <div className="flex justify-center p-3">
             <span>Express JS</span>
@@ -47,7 +47,7 @@ export default function Techstack() {
         </div>
         <div className="flex flex-col items-center bg-stone-900 rounded">
           <div className="flex justify-center w-32 p-3">
-            <Image src={MongoDBLogo} />
+            <Image src={MongoDBLogo} alt="" />
           </div>
           <div className="flex justify-center p-3">
             <span>Mongo DB</span>

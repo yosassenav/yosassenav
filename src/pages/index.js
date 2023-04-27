@@ -40,6 +40,10 @@ export default function Home() {
         </div>
         {/**Technologies */}
         <Techstack />
+        {/**Projects */}
+        <div className="my-4 mx-4">
+          <h3>Projects I've worked in</h3>
+        </div>
       </div>
       <Footer />
     </>
