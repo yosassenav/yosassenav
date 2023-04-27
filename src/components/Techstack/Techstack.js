@@ -9,7 +9,7 @@ export default function Techstack() {
     <>
       <div className="flex justify-center">
         <h3 className="my-4 text-center">
-          These are some of the techologies I've worked with:
+          These are some of the techologies I&apos;ve worked with:
         </h3>
       </div>
       <div className="grid grid-cols-4 gap-2 mx-6">
