@@ -35,13 +35,13 @@ export default function Home() {
           I was born and raised in Cancun Mexico. I started this journey back in
           2016 when I was a student, right now I am currently working in the
           hospitality industry as an Identity and access management analyst,
-          I&apos; love to expand my knowledge in the IT industry by assuming
+          I&apos;d love to expand my knowledge in the IT industry by assuming
           roles that allow me to challenge myself and learn new things!
         </div>
         {/**Technologies */}
         <Techstack />
         {/**Projects */}
-        <div className="my-4 mx-4">
+        <div className="my-6 mx-4 justify-center text-center">
           <h3>Projects I&apos;ve worked in</h3>
         </div>
       </div>
