@@ -12,8 +12,8 @@ export default function Techstack() {
           These are some of the techologies I&apos;ve worked with
         </h3>
       </div>
-      <div className="grid grid-cols-4 gap-2 mx-6">
-        <div className="flex flex-col items-center bg-stone-900 rounded">
+      <div className="grid grid-cols-4 gap-4 mx-6">
+        <div className="flex flex-col items-center bg-stone-900 hover:bg-gradient-to-r from-sky-600 to-sky-900 rounded">
           <div className="flex justify-center w-32 p-3">
             <Image src={NodejsLogo} alt="" />
           </div>
@@ -21,7 +21,7 @@ export default function Techstack() {
             <span>Node JS</span>
           </div>
         </div>
-        <div className="flex flex-col items-center bg-stone-900 rounded">
+        <div className="flex flex-col items-center bg-stone-900 hover:bg-gradient-to-r from-sky-600 to-sky-900 rounded">
           <div className="flex justify-center w-32 p-3">
             <Image src={ReactLogo} alt="" />
           </div>
@@ -29,7 +29,7 @@ export default function Techstack() {
             <span>React JS</span>
           </div>
         </div>
-        <div className="flex flex-col items-center bg-stone-900 rounded">
+        <div className="flex flex-col items-center bg-stone-900 hover:bg-gradient-to-r from-sky-600 to-sky-900 rounded">
           <div className="flex justify-center w-32 p-3">
             <Image src={JSLogo} alt="" />
           </div>
@@ -37,7 +37,7 @@ export default function Techstack() {
             <span>Javascript</span>
           </div>
         </div>
-        <div className="flex flex-col items-center bg-stone-900 rounded">
+        <div className="flex flex-col items-center bg-stone-900 hover:bg-gradient-to-r from-sky-600 to-sky-900 rounded">
           <div className="flex justify-center w-32 p-3">
             <Image src={ExpressLogo} alt="" />
           </div>
@@ -45,7 +45,7 @@ export default function Techstack() {
             <span>Express JS</span>
           </div>
         </div>
-        <div className="flex flex-col items-center bg-stone-900 rounded">
+        <div className="flex flex-col items-center bg-stone-900 hover:bg-gradient-to-r from-sky-600 to-sky-900 rounded">
           <div className="flex justify-center w-32 p-3">
             <Image src={MongoDBLogo} alt="" />
           </div>
