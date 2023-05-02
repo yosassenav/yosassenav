@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { Inter } from "next/font/google";
 import Techstack from "@/components/Techstack/Techstack";
+import Projects from "@/components/Projects/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,14 +25,14 @@ export default function Home() {
             />
           </div>
           <div className="my-4 mx-4">
-            <h3 className="py-2">Welcome! My name is Vanessa</h3>
+            <h2 className="py-2">Welcome! My name is Vanessa</h2>
             <p className="no-underline hover:underline">
               IT Specialist | Web developer Jr
             </p>
           </div>
         </div>
         {/**About Section*/}
-        <div className="my-10 mx-14 text-center">
+        <div className="my-10 mx-20 text-center">
           I was born and raised in Cancun Mexico. I started this journey back in
           2016 when I was a student, right now I am currently working in the
           hospitality industry as an Identity and access management analyst,
@@ -41,8 +42,9 @@ export default function Home() {
         {/**Technologies */}
         <Techstack />
         {/**Projects */}
-        <div className="my-6 mx-4 justify-center text-center">
-          <h3>Projects I&apos;ve worked in</h3>
+        <div className="my-12 mx-4 justify-center text-center">
+          <h2 className="my-4">Projects I&apos;ve worked in</h2>
+          <Projects />
         </div>
       </div>
       <Footer />
