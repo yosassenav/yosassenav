@@ -6,8 +6,6 @@ import { Inter } from "next/font/google";
 import Techstack from "@/components/Techstack/Techstack";
 import Projects from "@/components/Projects/Projects";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>
