@@ -27,3 +27,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.mobile-menu {
+  transform: translateX(100%);
+  transition: all ease-in 500ms;
+}
+
+.mobile-menu.expanded {
+  transform: translateX(0);
+}

@@ -1,7 +1,7 @@
 export default function Projects() {
   return (
     <>
-      <h3 className="my-8">CACALLI</h3>
+      <h3 className=" text-xl my-8">CACALLI</h3>
       <p className="mx-20">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
