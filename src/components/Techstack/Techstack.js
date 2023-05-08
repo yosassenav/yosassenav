@@ -13,11 +13,14 @@ export default function Techstack() {
         </h2>
       </div>
       <div className="grid grid-cols-3 gap-4 mx-6">
+        <Card img={JSLogo} title="HTML" />
+        <Card img={JSLogo} title="CSS" />
         <Card img={JSLogo} title="Javascript" />
         <Card img={ReactLogo} title="ReactJS" />
         <Card img={NodejsLogo} title="NodeJS" />
         <Card img={ExpressLogo} title="ExpressJS" />
         <Card img={MongoDBLogo} title="MongoDB" />
+        <Card img={JSLogo} title="Git" />
       </div>
     </>
   );
