@@ -2,7 +2,6 @@ import Image from "next/image";
 import profilePic from "../../public/img/vanne-kodemia.jpg";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import { Inter } from "next/font/google";
 import Techstack from "@/components/Techstack/Techstack";
 import Projects from "@/components/Projects/Projects";
 
@@ -27,7 +26,7 @@ export default function Home() {
           <Image
             src={profilePic}
             alt="Vanne"
-            className="mr-20 rounded object-fill h-50 w-64"
+            className="mr-20 rounded w-32 h-80 sm:w-36 md:w-44 lg:w-48 xl:w-72"
           />
         </div>
 
