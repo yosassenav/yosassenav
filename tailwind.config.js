@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         // title: ["Roboto", ...defaultTheme.fontFamily.sans],
         // text: ["Roboto", ...defaultTheme.fontFamily.sans],
+        'mono': ['ui-monospace', 'SFMono-Regular',],
       },
     },
   },
