@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "../../public/img/vanne-kodemia.jpg";
+import ProfilePic from "../../public/img/avatar.svg"
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Techstack from "@/components/Techstack/Techstack";
@@ -17,11 +17,12 @@ export default function Home() {
         <div className="flex flex-row justify-evenly my-14 mx-12">
           {/**About Section*/}
           <Image
-            src={profilePic}
+            src={ProfilePic}
             alt="Vanne"
-            className="mx-40 my-3 rounded w-48 h-48"
+            className="mx-40 my-3 rounded"
+           
           />
-          <div className="mx-40">
+          <div className="mx-40 my-20">
           
             I was born and raised in Mexico. I started this journey back in
             2016 <br/> when I was a student, right now I am currently working in the
