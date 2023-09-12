@@ -1,12 +1,21 @@
-import ReactLogo from "../../../public/img/react_logo.jpg";
-import JSLogo from "../../../public/img/js_logo.png";
-import MongoDBLogo from "../../../public/img/mongodb_logo.jpg";
-import NodejsLogo from "../../../public/img/node_logo.jpg";
-import ExpressLogo from "../../../public/img/expressjs_logo.jpg";
 import Card from "../Card/Card";
 import Image from "next/image";
 import LeftArrow from "../../../public/left-arrow.png";
 import RightArrow from "../../../public/right-arrow.png";
+import AWSLogo from "../../../public/img/aws-svgrepo-com.svg";
+import BootstrapLogo from "../../../public/img/bootstrap-fill-svgrepo-com.svg";
+import JSLogo from "../../../public/img/brand-js-svgrepo-com.svg";
+import CSSLogo from "../../../public/img/css3-01-svgrepo-com.svg";
+import GitLogo from "../../../public/img/git-icon-svgrepo-com.svg";
+import HTMLogo from "../../../public/img/html5-01-svgrepo-com.svg";
+import MongoDBLogo from "../../../public/img/mongodb-logo-svgrepo-com.svg";
+import NodeJSLogo from "../../../public/img/nodejs02-svgrepo-com.svg";
+import ReactjsLogo from "../../../public/img/react-svgrepo-com.svg";
+import SQLogo from "../../../public/img/sql-file-format-svgrepo-com.svg";
+import NextjsLogo from "../../../public/img/nextjs-fill-svgrepo-com.svg";
+
+
+
 
 
 export default function Techstack() {
@@ -18,9 +27,11 @@ export default function Techstack() {
         </h2>
       </div>
       <div className="flex flex-row justify-center gap-4 mx-6">
-        <Card img={JSLogo} title="HTML" />
-        <Card img={JSLogo} title="CSS" />
+        <Card img={HTMLogo} title="HTML"/>
+        <Card img={CSSLogo} title="CSS" />
         <Card img={JSLogo} title="Javascript" />
+        <Card img={BootstrapLogo} title="Bootstrap" />
+
       </div>
       <div className="flex mx-24 my-6 justify-between">      
         <Image src={LeftArrow} title="" alt="left arrow" height={30} className="flex flex-row"/>
