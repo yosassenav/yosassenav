@@ -1,88 +1,72 @@
+import React, { useState, useEffect } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
 
 export default function Header() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    // Function to check if the screen is small
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= 768); // Adjust the width as needed
+    };
+
+    // Initial check
+    checkScreenSize();
+
+    // Listen for window resize events to update the state
+    window.addEventListener('resize', checkScreenSize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
   return (
     <>
-      <header className="flex flex-row-reverse">
+    {isSmallScreen ? (
+        <MobileMenu />
+      ) : (
+        <header className="flex flex-row-reverse">
         <ul className="flex flex-row">
           <li className="my-6 mx-8 basis-12">
             <span
-              className="
-    bg-gradient-to-r from-sky-700 to-sky-900
-    bg-no-repeat [background-position:0_88%]
-    [background-size:100%_0.2em]
-    motion-safe:transition-all motion-safe:duration-200
-    py-3
-    rounded
-    hover:[background-size:100%_100%]
-    focus:[background-size:100%_100%]"
+              className=""
             >
               Home
             </span>
           </li>
           <li className="my-6 mx-8 basis-12">
             <span
-              className="
-    bg-gradient-to-r from-sky-700 to-sky-900
-    bg-no-repeat [background-position:0_88%]
-    [background-size:100%_0.2em]
-    motion-safe:transition-all motion-safe:duration-200
-    py-3
-    rounded
-    hover:[background-size:100%_100%]
-    focus:[background-size:100%_100%]"
+              className=""
             >
               About
             </span>
           </li>
           <li className="my-6 mx-8 basis-12">
             <span
-              className="
-    bg-gradient-to-r from-sky-700 to-sky-900
-    bg-no-repeat [background-position:0_88%]
-    [background-size:100%_0.2em]
-    motion-safe:transition-all motion-safe:duration-200
-    py-3
-    rounded
-    hover:[background-size:100%_100%]
-    focus:[background-size:100%_100%]"
+              className=""
             >
               Technologies
             </span>
           </li>
           <li className="my-6 mx-8 basis-12">
             <span
-              className="
-    bg-gradient-to-r from-sky-700 to-sky-900
-    bg-no-repeat [background-position:0_88%]
-    [background-size:100%_0.2em]
-    motion-safe:transition-all motion-safe:duration-200
-    py-3
-    rounded
-    hover:[background-size:100%_100%]
-    focus:[background-size:100%_100%]"
+              className=""
             >
               Projects
             </span>
           </li>
           <li className="my-6 mx-8 basis-12">
             <span
-              className="
-    bg-gradient-to-r from-sky-700 to-sky-900
-    bg-no-repeat [background-position:0_88%]
-    [background-size:100%_0.2em]
-    motion-safe:transition-all motion-safe:duration-200
-    py-3
-    rounded
-    hover:[background-size:100%_100%]
-    focus:[background-size:100%_100%]"
+              className=""
             >
               Contact
             </span>
           </li>
         </ul>
       </header>
-      <MobileMenu />
+      )}
+      
     </>
   );
 }
