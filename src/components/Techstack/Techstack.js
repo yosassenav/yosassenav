@@ -1,7 +1,6 @@
 import Card from "../Card/Card";
 import Image from "next/image";
-import LeftArrow from "../../../public/left-arrow.png";
-import RightArrow from "../../../public/right-arrow.png";
+
 import AWSLogo from "../../../public/img/aws-svgrepo-com.svg";
 import BootstrapLogo from "../../../public/img/bootstrap-fill-svgrepo-com.svg";
 import JSLogo from "../../../public/img/brand-js-svgrepo-com.svg";
@@ -16,36 +15,34 @@ import NextjsLogo from "../../../public/img/nextjs-fill-svgrepo-com.svg";
 
 
 
-
-
 export default function Techstack() {
+
+ 
+
+
   return (
     <>
       <div className="flex justify-center">
-        <h2 className="text-xl my-12 text-center">
-          Techologies I&apos;ve worked with:
+        <h2 className="text-xl text-center">
+          Technologies I&apos;ve worked with:
         </h2>
       </div>
-      <div className="flex flex-row justify-center gap-4 mx-6">
-        <Card img={HTMLogo} title="HTML"/>
-        <Card img={CSSLogo} title="CSS" />
-        <Card img={JSLogo} title="Javascript" />
-        <Card img={BootstrapLogo} title="Bootstrap" />
-
-      </div>
-      <div className="flex mx-24 my-6 justify-between">      
-        <Image src={LeftArrow} title="" alt="left arrow" height={30} className="flex flex-row"/>
-        <Image src={RightArrow} title="" alt="right arrow" height={30} className="flex flex-row"/>
+      <div className="h-4/5 w-full my-10">
+        <div className="grid grid-cols-4 gap-x-4 gap-y-4 place-items-center">
+            <Image src={AWSLogo} width={85} height={85} alt="AWS"/>
+            <Image src={BootstrapLogo} width={85} height={85} alt="Bootstrap"/>
+            <Image src={JSLogo} width={85} height={85} alt="JS"/>
+            <Image src={CSSLogo} width={85} height={85} alt="CSS"/>
+            <Image src={GitLogo} width={85} height={85} alt="Git"/>
+            <Image src={HTMLogo} width={85} height={85} alt="HTML"/>
+            <Image src={MongoDBLogo} width={85} height={85} alt="MongoDB"/>
+            <Image src={NodeJSLogo} width={85} height={85} alt="NodeJS"/>
+            <Image src={ReactjsLogo} width={85} height={85} alt="ReactJS"/>
+            <Image src={SQLogo} width={85} height={85} alt="SQL"/>
+            <Image src={NextjsLogo} width={85} height={85} alt="NextJS"/>
+          </div>
       </div>
     </>
   );
 }
 
-/**
- * 
-        <Card img={ReactLogo} title="ReactJS" />
-        <Card img={NodejsLogo} title="NodeJS" />
-        <Card img={ExpressLogo} title="ExpressJS" />
-        <Card img={MongoDBLogo} title="MongoDB" />
-        <Card img={JSLogo} title="Git" />
- */
