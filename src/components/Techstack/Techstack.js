@@ -1,4 +1,3 @@
-import Card from "../Card/Card";
 import Image from "next/image";
 
 import AWSLogo from "../../../public/img/aws-svgrepo-com.svg";
@@ -28,7 +27,7 @@ export default function Techstack() {
         </h2>
       </div>
       <div className="h-4/5 w-full my-10">
-        <div className="grid grid-cols-4 gap-x-4 gap-y-4 place-items-center">
+        <div className="grid grid-cols-4 gap-x-4 gap-y-6 place-items-center">
             <Image src={AWSLogo} width={85} height={85} alt="AWS"/>
             <Image src={BootstrapLogo} width={85} height={85} alt="Bootstrap"/>
             <Image src={JSLogo} width={85} height={85} alt="JS"/>
