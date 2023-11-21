@@ -14,15 +14,15 @@ export default function Home() {
       <div className="">
         {/**Home Section*/}
         <WelcomeBanner/>
-        <div className="flex flex-row justify-evenly my-14 mx-12">
+        <div className="flex flex-col lg:flex-row my-14 mx-12">
           {/**About Section*/}
           <Image
             src={ProfilePic}
             alt="Vanne"
-            className="mx-40 my-3 rounded"
+            className="mx-40 my-3 rounded place-items-center"
            
           />
-          <div className="mx-40 my-20">
+          <div className="mx-40 my-20 place-items-center">
           
             I was born and raised in Mexico. I started this journey back in
             2016 <br/> when I was a student, right now I am currently working in the
