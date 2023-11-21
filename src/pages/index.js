@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <title>Vanessa Martinez Romero</title>
       <Header />
-      <div className="grid">
+      <div className="">
         {/**Home Section*/}
         <WelcomeBanner/>
         <div className="flex flex-col lg:flex-row my-14 mx-12">
