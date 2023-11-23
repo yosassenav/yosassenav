@@ -21,11 +21,10 @@ export default function Techstack() {
 
   return (
     <>
-      <div className="flex justify-center">
-        <h2 className="text-xl text-center">
+        <h2 className="text-center lg:text-left text-3xl my-4 lg:my-12">
           Technologies I&apos;ve worked with:
         </h2>
-      </div>
+        <br/>
       <div className="h-4/5 w-full my-10">
         <div className="grid grid-cols-4 gap-x-4 gap-y-6 place-items-center">
             <Image src={AWSLogo} width={85} height={85} alt="AWS"/>
