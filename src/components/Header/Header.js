@@ -30,35 +30,35 @@ export default function Header() {
         <ul className="flex flex-row">
           <li className="my-6 mx-8 basis-12">
             <span
-              className=""
+              className="text-xl"
             >
               Home
             </span>
           </li>
           <li className="my-6 mx-8 basis-12">
             <span
-              className=""
+              className="text-xl"
             >
               About
             </span>
           </li>
           <li className="my-6 mx-8 basis-12">
             <span
-              className=""
+              className="text-xl"
             >
               Technologies
             </span>
           </li>
           <li className="my-6 mx-8 basis-12">
             <span
-              className=""
+              className="text-xl"
             >
               Projects
             </span>
           </li>
           <li className="my-6 mx-8 basis-12">
             <span
-              className=""
+              className="text-xl"
             >
               Contact
             </span>
