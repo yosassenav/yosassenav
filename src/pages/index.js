@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <title>Vanessa Martinez Romero</title>
       <Header />
-      <div className="mx-auto w-full sm:w-11/12 md:w-3/4 lg:w-1/2 p-4">
+      <div className="mx-auto w-full sm:w-11/12 md:w-3/4 p-4">
         {/* Home Section */}
         <WelcomeBanner />
         <div className="flex flex-col lg:flex-row my-4 lg:my-14">
@@ -19,7 +19,7 @@ export default function Home() {
           <Image
             src={ProfilePic}
             alt="Vanne"
-            className="mx-auto my-3 lg:mx-40 lg:my-3 rounded"
+            className="mx-auto my-3 lg:mx-10 lg:my-3 rounded"
             width={200} // Adjust the width based on your design
             height={200} // Adjust the height based on your design
           />
