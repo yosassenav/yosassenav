@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import MobileMenu from "../MobileMenu/MobileMenu";
 
 export default function Header() {
@@ -29,39 +30,34 @@ export default function Header() {
         <header className="flex flex-row-reverse">
         <ul className="flex flex-row">
           <li className="my-6 mx-8 basis-12">
-            <span
-              className="text-xl"
-            >
+            <a className="text-xl hover:text-indigo-600 transition duration-300">
               Home
-            </span>
+              <Link href="#"/>
+            </a>
           </li>
           <li className="my-6 mx-8 basis-12">
-            <span
-              className="text-xl"
-            >
+            <a className="text-xl hover:text-indigo-600 transition duration-300">
               About
-            </span>
+              <Link href="#"/>
+            </a>
           </li>
           <li className="my-6 mx-8 basis-12">
-            <span
-              className="text-xl"
-            >
+            <a className="text-xl hover:text-indigo-600 transition duration-300">
               Technologies
-            </span>
+              <Link href="#"/>
+            </a>
           </li>
           <li className="my-6 mx-8 basis-12">
-            <span
-              className="text-xl"
-            >
+            <a className="text-xl hover:text-indigo-600 transition duration-300">
               Projects
-            </span>
+              <Link href="#"/>
+            </a>
           </li>
           <li className="my-6 mx-8 basis-12">
-            <span
-              className="text-xl"
-            >
+            <a className="text-xl hover:text-indigo-600 transition duration-300">
               Contact
-            </span>
+              <Link href="#"/>
+            </a>
           </li>
         </ul>
       </header>
