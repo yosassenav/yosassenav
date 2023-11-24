@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import { FaTimes } from "react-icons/fa";
 export default function MobileMenu() {
   return (
@@ -7,11 +8,36 @@ export default function MobileMenu() {
       {/** bg-slate-300*/}
       <div className="place-self-end"><FaTimes /></div>
       <ul>
-        <li className="text-xl py-1">Home</li>
-        <li className="text-xl py-1">About</li>
-        <li className="text-xl py-1">Technologies</li>
-        <li className="text-xl py-1">Projects</li>
-        <li className="text-xl py-1">Contact</li>
+        <li className="text-xl py-1">
+          <a className='hover:text-indigo-600 transition duration-300'>
+            Home
+            <Link href=""/>
+          </a>
+        </li>
+        <li className="text-xl py-1">
+          <a className='hover:text-indigo-600 transition duration-300'>
+            About
+            <Link href=""/>
+          </a>
+        </li>
+        <li className="text-xl py-1">
+          <a className='hover:text-indigo-600 transition duration-300'>
+            Technologies
+            <Link href=""/>
+          </a>
+        </li>
+        <li className="text-xl py-1">
+          <a className='hover:text-indigo-600 transition duration-300'>
+            Projects
+            <Link href=""/>
+          </a>
+        </li>
+        <li className="text-xl py-1">
+          <a className='hover:text-indigo-600 transition duration-300'>
+            Contacts
+            <Link href=""/>
+          </a>
+        </li>
       </ul>
     </div>
   );
