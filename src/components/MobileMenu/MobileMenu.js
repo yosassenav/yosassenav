@@ -9,34 +9,29 @@ export default function MobileMenu() {
       <div className="place-self-end"><FaTimes /></div>
       <ul>
         <li className="text-xl py-1">
-          <a className='hover:text-indigo-600 transition duration-300'>
+          <Link href="" className='hover:text-indigo-600 transition duration-300'>
             Home
-            <Link href=""/>
-          </a>
+          </Link>
         </li>
         <li className="text-xl py-1">
-          <a className='hover:text-indigo-600 transition duration-300'>
+          <Link href="" className='hover:text-indigo-600 transition duration-300'>
             About
-            <Link href=""/>
-          </a>
+          </Link>
         </li>
         <li className="text-xl py-1">
-          <a className='hover:text-indigo-600 transition duration-300'>
+          <Link href="" className='hover:text-indigo-600 transition duration-300'>
             Technologies
-            <Link href=""/>
-          </a>
+          </Link>
         </li>
         <li className="text-xl py-1">
-          <a className='hover:text-indigo-600 transition duration-300'>
+          <Link href="" className='hover:text-indigo-600 transition duration-300'>
             Projects
-            <Link href=""/>
-          </a>
+          </Link>
         </li>
         <li className="text-xl py-1">
-          <a className='hover:text-indigo-600 transition duration-300'>
+          <Link href="" className='hover:text-indigo-600 transition duration-300'>
             Contacts
-            <Link href=""/>
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

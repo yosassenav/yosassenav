@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
 
 export default function Header() {
@@ -27,40 +27,35 @@ export default function Header() {
     {isSmallScreen ? (
         <MobileMenu />
       ) : (
-        <header className="flex flex-row-reverse">
-        <ul className="flex flex-row">
-          <li className="my-6 mx-8 basis-12">
-            <a className="text-xl hover:text-indigo-600 transition duration-300">
-              Home
-              <Link href="#"/>
-            </a>
-          </li>
-          <li className="my-6 mx-8 basis-12">
-            <a className="text-xl hover:text-indigo-600 transition duration-300">
-              About
-              <Link href="#"/>
-            </a>
-          </li>
-          <li className="my-6 mx-8 basis-12">
-            <a className="text-xl hover:text-indigo-600 transition duration-300">
-              Technologies
-              <Link href="#"/>
-            </a>
-          </li>
-          <li className="my-6 mx-8 basis-12">
-            <a className="text-xl hover:text-indigo-600 transition duration-300">
-              Projects
-              <Link href="#"/>
-            </a>
-          </li>
-          <li className="my-6 mx-8 basis-12">
-            <a className="text-xl hover:text-indigo-600 transition duration-300">
-              Contact
-              <Link href="#"/>
-            </a>
-          </li>
-        </ul>
-      </header>
+    <header className="flex flex-row-reverse">
+      <ul className='flex flex-row'>
+        <li className="my-6 mx-8 basis-12">
+          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+            Home
+          </Link>
+        </li>
+        <li className="my-6 mx-8 basis-12">
+          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+            About
+          </Link>
+        </li>
+        <li className="my-6 mx-8 basis-12">
+          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+            Technologies
+          </Link>
+        </li>
+        <li className="my-6 mx-8 basis-12">
+          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+            Projects
+          </Link>
+        </li>
+        <li className="my-6 mx-8 basis-12">
+          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+            Contacts
+          </Link>
+        </li>
+      </ul>
+    </header>
       )}
       
     </>
