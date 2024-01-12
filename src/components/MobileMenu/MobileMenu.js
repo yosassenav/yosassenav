@@ -1,7 +1,6 @@
 
 import Link from 'next/link';
 import { FaTimes } from "react-icons/fa";
-// import styles from "../../styles/HeaderBackground.module.css";
 
 
 export default function MobileMenu() {
