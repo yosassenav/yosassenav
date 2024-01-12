@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
+// import styles from "../../styles/HeaderBackground.module.css";
 
 export default function Header() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
