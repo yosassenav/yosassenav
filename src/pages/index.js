@@ -16,6 +16,8 @@ export default function Home() {
         {/* Home Section */}
         <WelcomeBanner />
         <br/>
+        <br/>
+
         {/* Technologies */}
         <Techstack />
        
