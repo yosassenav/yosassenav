@@ -15,14 +15,18 @@ export default function Home() {
         <Circles/>
         {/* Home Section */}
         <WelcomeBanner />
-       
+        <br/>
         {/* Technologies */}
         <Techstack />
        
         {/* Projects */}
+        <br/>
+        <br/>
         <h2 className="text-center lg:text-left text-3xl my-4 lg:my-12">
           Projects:
         </h2>
+        <br/>
+        <br/>
         <div className="flex flex-col lg:flex-row lg:justify-evenly text-center">
           <ProjectCard title="Cacalli" description="ksjkjdsnckjdsnksd" />
           <ProjectCard
