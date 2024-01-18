@@ -5,6 +5,7 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 
 export default function Header() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     // Function to check if the screen is small
@@ -23,10 +24,18 @@ export default function Header() {
       window.removeEventListener('resize', checkScreenSize);
     };
   }, []);
+
+  const toggleMenu = () => {
+    console.log("Before menu is opened", isMenuOpen);
+    setIsMenuOpen(!isMenuOpen);
+    console.log("After menu is opened", isMenuOpen);
+
+  }
+
   return (
     <>
     {isSmallScreen ? (
-        <MobileMenu />
+        <MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
       ) : (
     <header className="flex flex-row-reverse">
       <ul className='flex flex-row'>
