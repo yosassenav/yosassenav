@@ -1,9 +1,16 @@
 
 import Link from 'next/link';
+import { useEffect } from 'react';
 import { FaTimes } from "react-icons/fa";
 
 
 export default function MobileMenu({isMenuOpen, toggleMenu}) {
+  
+  useEffect(()=>{
+    console.log("isMenuOpen",isMenuOpen)
+  },[isMenuOpen]);
+  
+
   return (
     <>
       {isMenuOpen && (

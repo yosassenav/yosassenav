@@ -26,11 +26,10 @@ export default function Header() {
   }, []);
 
   const toggleMenu = () => {
-    console.log("Before menu is opened", isMenuOpen);
     setIsMenuOpen(!isMenuOpen);
-    console.log("After menu is opened", isMenuOpen);
-
   }
+
+
 
   return (
     <>
