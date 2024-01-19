@@ -1,15 +1,18 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
-// import styles from "../../styles/HeaderBackground.module.css";
+
 
 export default function Header() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     // Function to check if the screen is small
     const checkScreenSize = () => {
       setIsSmallScreen(window.innerWidth <= 768); // Adjust the width as needed
+      // when the screen is small, open the mobile menu
+      setIsMenuOpen(true);
     };
 
     // Initial check
@@ -23,10 +26,19 @@ export default function Header() {
       window.removeEventListener('resize', checkScreenSize);
     };
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(prevState => !prevState);
+  }
+
+  useEffect(()=>{
+    console.log("isMenuOpen",isMenuOpen)
+  },[isMenuOpen]);
+
   return (
     <>
     {isSmallScreen ? (
-        <MobileMenu />
+        <MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
       ) : (
     <header className="flex flex-row-reverse">
       <ul className='flex flex-row'>
