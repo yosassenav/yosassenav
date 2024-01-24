@@ -1,5 +1,5 @@
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
 
 
@@ -31,9 +31,6 @@ export default function Header() {
     setIsMenuOpen(prevState => !prevState);
   }
 
-  useEffect(()=>{
-    console.log("isMenuOpen",isMenuOpen)
-  },[isMenuOpen]);
 
   return (
     <>
@@ -43,27 +40,27 @@ export default function Header() {
     <header className="flex flex-row-reverse">
       <ul className='flex flex-row'>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <Link href="/" className='text-xl hover:text-indigo-600 transition duration-300'>
             Home
           </Link>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <Link href="/about" className='text-xl hover:text-indigo-600 transition duration-300'>
             About
           </Link>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <Link href="/technologies" className='text-xl hover:text-indigo-600 transition duration-300'>
             Technologies
           </Link>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <Link href="/projects" className='text-xl hover:text-indigo-600 transition duration-300'>
             Projects
           </Link>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <Link href="/contacts" className='text-xl hover:text-indigo-600 transition duration-300'>
             Contacts
           </Link>
         </li>

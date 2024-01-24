@@ -18,27 +18,27 @@ export default function MobileMenu({isMenuOpen, toggleMenu}) {
         </div>
         <ul>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <Link href="/" className='hover:text-indigo-600 transition duration-300'>
               Home
             </Link>
           </li>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <Link href="/about" className='hover:text-indigo-600 transition duration-300'>
               About
             </Link>
           </li>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <Link href="/technologies" className='hover:text-indigo-600 transition duration-300'>
               Technologies
             </Link>
           </li>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <Link href="/projects" className='hover:text-indigo-600 transition duration-300'>
               Projects
             </Link>
           </li>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <Link href="/contacts" className='hover:text-indigo-600 transition duration-300'>
               Contacts
             </Link>
           </li>
