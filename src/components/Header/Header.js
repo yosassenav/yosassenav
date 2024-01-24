@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
 
 
+
 export default function Header() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,7 +88,7 @@ export default function Header() {
       </ul>
     </header>
       )}
-      
+
     </>
   );
 }
