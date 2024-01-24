@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
+
 
 
 export default function Header() {
@@ -31,46 +31,64 @@ export default function Header() {
     setIsMenuOpen(prevState => !prevState);
   }
 
-  useEffect(()=>{
-    console.log("isMenuOpen",isMenuOpen)
-  },[isMenuOpen]);
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const technologiesRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+    toggleMenu(); // Close the menu after clicking on a button
+  };
+
 
   return (
     <>
     {isSmallScreen ? (
-        <MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
+        <MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} scrollToSection={scrollToSection}
+        sections={{
+          Home: homeRef,
+          About: aboutRef,
+          Technologies: technologiesRef,
+          Projects: projectsRef,
+          Contacts: contactRef,
+        }}
+        />
       ) : (
     <header className="flex flex-row-reverse">
       <ul className='flex flex-row'>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(homeRef)}>
             Home
-          </Link>
+          </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(aboutRef)}>
             About
-          </Link>
+          </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(technologiesRef)}>
             Technologies
-          </Link>
+          </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(projectsRef)}>
             Projects
-          </Link>
+          </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <Link href="#" className='text-xl hover:text-indigo-600 transition duration-300'>
+          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(contactRef)}>
             Contacts
-          </Link>
+          </button>
         </li>
       </ul>
     </header>
       )}
-      
+
     </>
   );
 }
