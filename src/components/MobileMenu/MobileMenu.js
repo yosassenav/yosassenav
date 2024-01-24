@@ -1,9 +1,8 @@
 
-import Link from 'next/link';
 import { FaTimes } from "react-icons/fa";
 
 
-export default function MobileMenu({isMenuOpen, toggleMenu}) {
+export default function MobileMenu({isMenuOpen, toggleMenu, scrollToSection, sections}) {
   
 
   return (
@@ -18,29 +17,29 @@ export default function MobileMenu({isMenuOpen, toggleMenu}) {
         </div>
         <ul>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <button className='hover:text-indigo-600 transition duration-300' onClick={() => scrollToSection(sections.homeRef)}>
               Home
-            </Link>
+            </button>
           </li>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <button className='hover:text-indigo-600 transition duration-300' onClick={() => scrollToSection(sections.aboutRef)}>
               About
-            </Link>
+            </button>
           </li>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <button className='hover:text-indigo-600 transition duration-300' onClick={()=> scrollToSection(sections.technologiesRef)}>
               Technologies
-            </Link>
+            </button>
           </li>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <button className='hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(sections.projectsRef)}>
               Projects
-            </Link>
+            </button>
           </li>
           <li className="text-xl py-1">
-            <Link href="" className='hover:text-indigo-600 transition duration-300'>
+            <button className='hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(sections.contactRef)}>
               Contacts
-            </Link>
+            </button>
           </li>
         </ul>
       </div>
