@@ -38,7 +38,7 @@ export default function MobileMenu({isMenuOpen, toggleMenu, scrollToSection, sec
           </li>
           <li className="text-xl py-1">
             <button className='hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(sections.contactRef)}>
-              Contacts
+              Contact
             </button>
           </li>
         </ul>
