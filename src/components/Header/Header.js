@@ -61,27 +61,27 @@ export default function Header() {
     <header className="flex flex-row-reverse">
       <ul className='flex flex-row'>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(homeRef)}>
+          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(homeRef)}>
             Home
           </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(aboutRef)}>
+          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(aboutRef)}>
             About
           </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(technologiesRef)}>
+          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(technologiesRef)}>
             Technologies
           </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(projectsRef)}>
+          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(projectsRef)}>
             Projects
           </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(contactRef)}>
+          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(contactRef)}>
             Contact
           </button>
         </li>
