@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-export default function Footer() {
+const Footer = forwardRef((_, ref)=>{
   return (
-    <footer className="flex-none py-14">
+    <footer className="flex-none py-14" ref={ref}>
       <div className="mb-6 grid grid-cols-1 justify-center">
         <ul className="flex flex-row justify-center">
           <li className="my-6 mx-8 block">
@@ -21,5 +22,8 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
-}
+  )
+}) 
+  
+Footer.displayName = "Footer";
+export default Footer;

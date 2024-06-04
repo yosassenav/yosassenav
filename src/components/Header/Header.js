@@ -82,7 +82,7 @@ export default function Header() {
         </li>
         <li className="my-6 mx-8 basis-12">
           <button className='text-xl hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(contactRef)}>
-            Contacts
+            Contact
           </button>
         </li>
       </ul>

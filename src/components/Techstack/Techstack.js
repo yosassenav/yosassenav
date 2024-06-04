@@ -1,5 +1,5 @@
+import { forwardRef } from "react";
 import Image from "next/image";
-
 import AWSLogo from "../../../public/img/aws-svgrepo-com.svg";
 import BootstrapLogo from "../../../public/img/bootstrap-fill-svgrepo-com.svg";
 import JSLogo from "../../../public/img/brand-js-svgrepo-com.svg";
@@ -14,13 +14,10 @@ import NextjsLogo from "../../../public/img/nextjs-fill-svgrepo-com.svg";
 
 
 
-export default function Techstack() {
-
- 
-
+const Techstack = forwardRef((_, ref)=>{
 
   return (
-    <>
+    <section ref={ref}>
         <h2 className="text-center lg:text-left text-3xl my-4 lg:my-12">
           Technologies I&apos;ve worked with:
         </h2>
@@ -40,7 +37,13 @@ export default function Techstack() {
             <Image src={NextjsLogo} width={85} height={85} alt="NextJS"/>
           </div>
       </div>
-    </>
-  );
-}
+    </section>
+  )
+});
+
+Techstack.displayName = "Techstack";
+export default Techstack;
+
+ 
+  
 
