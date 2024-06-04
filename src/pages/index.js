@@ -5,7 +5,6 @@ import Footer from "@/components/Footer/Footer";
 import Techstack from "@/components/Techstack/Techstack";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import WelcomeBanner from "@/components/WelcomeBanner/WelcomeBanner";
-import Circles from "@/components/Circles/Circles";
 
 export default function Home() {
 
@@ -20,8 +19,7 @@ export default function Home() {
     <>
       <title>Vanessa Martinez Romero</title>
       <Header />
-      <div className="mx-auto w-full sm:w-11/12 md:w-3/4 p-4 area" ref={homeRef}>
-        <Circles/>
+      <div className="mx-auto w-full sm:w-11/12 md:w-3/4 p-4" ref={homeRef}>
         {/* Home Section */}
         <WelcomeBanner ref={aboutRef}/>
         <br/>
