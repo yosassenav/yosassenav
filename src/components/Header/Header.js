@@ -3,7 +3,8 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 
 
 
-export default function Header() {
+export default function Header({ scrollToSection }) {
+  
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -37,12 +38,12 @@ export default function Header() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  const scrollToSection = (ref) => {
-    if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
-    }
-    toggleMenu(); // Close the menu after clicking on a button
-  };
+  // const scrollToSection = (ref) => {
+  //   if (ref && ref.current) {
+  //     ref.current.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  //   toggleMenu(); // Close the menu after clicking on a button
+  // };
 
 
   return (
@@ -61,27 +62,27 @@ export default function Header() {
     <header className="flex flex-row-reverse">
       <ul className='flex flex-row'>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(homeRef)}>
+          <button className='text-xl' onClick={()=>scrollToSection(homeRef)}>
             Home
           </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(aboutRef)}>
+          <button className='text-xl' onClick={()=>scrollToSection(aboutRef)}>
             About
           </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(technologiesRef)}>
+          <button className='text-xl' onClick={()=>scrollToSection(technologiesRef)}>
             Technologies
           </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(projectsRef)}>
+          <button className='text-xl' onClick={()=>scrollToSection(projectsRef)}>
             Projects
           </button>
         </li>
         <li className="my-6 mx-8 basis-12">
-          <button className='text-xl hover:text-indigo-600 hover:underline transition duration-300' onClick={()=>scrollToSection(contactRef)}>
+          <button className='text-xl' onClick={()=>scrollToSection(contactRef)}>
             Contact
           </button>
         </li>

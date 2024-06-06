@@ -14,20 +14,45 @@ export default function Home() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
+  const scrollToSection = (section) => {
+    switch(section){
+      case 'Home':
+        homeRef.current.scrollIntoView({behavior: 'smooth'});
+        break;
+      case 'About':
+        aboutRef.current.scrollIntoView({behavior: 'smooth'});
+        break;
+      case 'Technologies':
+        technologiesRef.current.scrollIntoView({behavior: 'smooth'});
+        break;
+      case 'Projects':
+        projectsRef.current.scrollIntoView({behavior: 'smooth'});
+        break;
+      case 'Contact':
+        contactRef.current.scrollIntoView({behavior: 'smooth'});
+        break;
+      default:
+        break;
+    }
+  }
 
   return (
     <>
       <title>Vanessa Martinez Romero</title>
-      <Header />
-      <div className="mx-auto w-full sm:w-11/12 md:w-3/4 p-4" ref={homeRef}>
+      <Header scrollToSection={scrollToSection} />      
+      <div className="mx-auto w-full sm:w-11/12 md:w-3/4 p-4">
         {/* Home Section */}
-        <WelcomeBanner ref={aboutRef}/>
+        <div ref={homeRef}>
+          <WelcomeBanner/>
+        </div>
         <br/>
         <br/>
 
         {/* Technologies */}
-        <Techstack ref={technologiesRef}/>
-       
+        <div ref={technologiesRef}>
+          <Techstack/>
+        </div>
+        
         {/* Projects */}
         <br/>
         <br/>
@@ -45,7 +70,9 @@ export default function Home() {
           <ProjectCard title="P2" description="nkndlcpokpksapoksa" />
         </div>
       </div>
-      <Footer ref={contactRef}/>
+      <div ref={contactRef}>
+      <Footer/>
+      </div>
     </>
   );
 }
