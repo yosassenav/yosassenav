@@ -17,27 +17,27 @@ export default function MobileMenu({isMenuOpen, toggleMenu, scrollToSection, sec
         </div>
         <ul>
           <li className="text-xl py-1">
-            <button className='hover:text-indigo-600 transition duration-300' onClick={() => scrollToSection(sections.homeRef)}>
+            <button className='' onClick={() => scrollToSection(sections.homeRef)}>
               Home
             </button>
           </li>
           <li className="text-xl py-1">
-            <button className='hover:text-indigo-600 transition duration-300' onClick={() => scrollToSection(sections.aboutRef)}>
+            <button className='' onClick={() => scrollToSection(sections.aboutRef)}>
               About
             </button>
           </li>
           <li className="text-xl py-1">
-            <button className='hover:text-indigo-600 transition duration-300' onClick={()=> scrollToSection(sections.technologiesRef)}>
+            <button className='' onClick={()=> scrollToSection(sections.technologiesRef)}>
               Technologies
             </button>
           </li>
           <li className="text-xl py-1">
-            <button className='hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(sections.projectsRef)}>
+            <button className='' onClick={()=>scrollToSection(sections.projectsRef)}>
               Projects
             </button>
           </li>
           <li className="text-xl py-1">
-            <button className='hover:text-indigo-600 transition duration-300' onClick={()=>scrollToSection(sections.contactRef)}>
+            <button className='' onClick={()=>scrollToSection(sections.contactRef)}>
               Contact
             </button>
           </li>
