@@ -1,10 +1,11 @@
 import { forwardRef } from 'react';
 import Image from "next/image";
 import ProfilePic from "../../../public/img/avatar.svg";
+import About from '@/pages/About';
 
 const WelcomeBanner = forwardRef((_, ref)=>{
   return(
-    <div className="flex flex-col my-20 mx-12 justify-center text-center" ref={ref}>
+    <div className="flex flex-col my-12 mx-12 justify-center text-center" ref={ref}>
       <p className="text-2xl my-3">Welcome!, my name is</p>
       <h1 className="text-5xl">Vanessa Romero</h1>
       <h3 className="text-2xl my-4 mb-10">IT Specialist | Web Developer</h3>
@@ -17,8 +18,8 @@ const WelcomeBanner = forwardRef((_, ref)=>{
           width={200} 
           height={200} 
         />
-        <div className="mx-auto my-4 text-xl lg:mx-4 lg:my-20 text-center lg:text-left">
-          I was born and raised in Mexico. I started this journey back in
+        <div className="mx-auto my-2 text-xl lg:mx-4 lg:my-20 text-center lg:text-left">
+        I was born and raised in Mexico. I started this journey back in
           2016 when I was a student, right now I am currently working
           in the hospitality industry as an Identity and access
           management analyst. <br/><br/> I'd love to expand my knowledge in the IT
