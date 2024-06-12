@@ -18,6 +18,7 @@ export default function Header({ scrollToSection }) {
     };
   }, []);
 
+  // Function to toggle mobile menu
   const toggleMenu = () => {
     setIsMenuOpen(prevState => !prevState);
   };

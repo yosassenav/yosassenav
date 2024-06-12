@@ -5,6 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Techstack from "@/components/Techstack/Techstack";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import WelcomeBanner from "@/components/WelcomeBanner/WelcomeBanner";
+import About from './About';
 
 export default function Home() {
 
@@ -44,6 +45,13 @@ export default function Home() {
         {/* Home Section */}
         <div ref={homeRef}>
           <WelcomeBanner/>
+        </div>
+        <br/>
+        <br/>
+
+        {/* Technologies */}
+        <div ref={aboutRef}>
+          <About/>
         </div>
         <br/>
         <br/>
