@@ -1,6 +1,7 @@
 import { forwardRef } from 'react';
 import Image from "next/image";
 import ProfilePic from "../../../public/img/avatar.svg";
+import About from '@/pages/About';
 
 const WelcomeBanner = forwardRef((_, ref)=>{
   return(
@@ -18,12 +19,7 @@ const WelcomeBanner = forwardRef((_, ref)=>{
           height={200} 
         />
         <div className="mx-auto my-4 text-xl lg:mx-4 lg:my-20 text-center lg:text-left">
-          I was born and raised in Mexico. I started this journey back in
-          2016 when I was a student, right now I am currently working
-          in the hospitality industry as an Identity and access
-          management analyst. <br/><br/> I'd love to expand my knowledge in the IT
-          industry by assuming roles that allow me to challenge myself
-          and learn new things!
+         <About/>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ export default function Home() {
         aboutRef.current.scrollIntoView({behavior: 'smooth'});
         break;
       case 'Technologies':
-        technologiesRef.current.scrollIntoView({behavior: 'smooth'});
+        technologiesRef.current.scrollIntoView({behavior: 'smooth'})
         break;
       case 'Projects':
         projectsRef.current.scrollIntoView({behavior: 'smooth'});
