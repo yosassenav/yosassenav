@@ -8,6 +8,7 @@ export default function Header({ scrollToSection }) {
   useEffect(() => {
     const checkScreenSize = () => {
       setIsSmallScreen(window.innerWidth <= 768);
+      console.log("checking...")
     };
 
     checkScreenSize();
@@ -21,6 +22,7 @@ export default function Header({ scrollToSection }) {
   // Function to toggle mobile menu
   const toggleMenu = () => {
     setIsMenuOpen(prevState => !prevState);
+    console.log("toggling!")
   };
 
   return (
