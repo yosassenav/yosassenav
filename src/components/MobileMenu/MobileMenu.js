@@ -3,9 +3,6 @@ import { FaTimes } from "react-icons/fa";
 
 export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection }) {
 
-  useEffect(() => {
-    console.log("MobileMenu isMenuOpen:", isMenuOpen);
-  }, [isMenuOpen]);
 
   return (
     <>
