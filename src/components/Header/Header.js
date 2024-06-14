@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header({ scrollToSection }) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -8,7 +9,6 @@ export default function Header({ scrollToSection }) {
   useEffect(() => {
     const checkScreenSize = () => {
       setIsSmallScreen(window.innerWidth <= 768);
-      console.log("checking...")
     };
 
     checkScreenSize();
@@ -22,24 +22,28 @@ export default function Header({ scrollToSection }) {
   // Function to toggle mobile menu
   const toggleMenu = () => {
     setIsMenuOpen(prevState => !prevState);
-    console.log("toggling!")
   };
 
   return (
     <>
       {isSmallScreen ? (
-        <MobileMenu 
-          isMenuOpen={isMenuOpen} 
-          toggleMenu={toggleMenu} 
-          scrollToSection={scrollToSection}
-          sections={{
-            homeRef: 'Home',
-            aboutRef: 'About',
-            technologiesRef: 'Technologies',
-            projectsRef: 'Projects',
-            contactRef: 'Contact',
-          }}
-        />
+        <>
+          <button onClick={toggleMenu}>
+            <GiHamburgerMenu aria-label='Burger Menu' className='mx-2 my-2'/>
+          </button>
+          <MobileMenu 
+            isMenuOpen={isMenuOpen} 
+            toggleMenu={toggleMenu} 
+            scrollToSection={scrollToSection}
+            sections={{
+              homeRef: 'Home',
+              aboutRef: 'About',
+              technologiesRef: 'Technologies',
+              projectsRef: 'Projects',
+              contactRef: 'Contact',
+            }}
+          />
+        </>
       ) : (
         <header className="flex flex-row-reverse">
           <ul className='flex flex-row'>

@@ -1,7 +1,7 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react';
 import { FaTimes } from "react-icons/fa";
 
-export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection, sections }) {
+export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection }) {
 
   useEffect(() => {
     console.log("MobileMenu isMenuOpen:", isMenuOpen);
@@ -18,27 +18,27 @@ export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection, se
           </div>
           <ul>
             <li className="text-xl py-1">
-              <button className='' onClick={() => scrollToSection(sections.homeRef)}>
+              <button className='' onClick={() => {scrollToSection('Home'); toggleMenu();}}>
                 Home
               </button>
             </li>
             <li className="text-xl py-1">
-              <button className='' onClick={() => scrollToSection('About')}>
+              <button className='' onClick={() => {scrollToSection('About'); toggleMenu();}}>
                 About
               </button>
             </li>
             <li className="text-xl py-1">
-              <button className='' onClick={() => scrollToSection('Technologies')}>
+              <button className='' onClick={() => {scrollToSection('Technologies'); toggleMenu();}}>
                 Technologies
               </button>
             </li>
             <li className="text-xl py-1">
-              <button className='' onClick={() => scrollToSection('Projects')}>
+              <button className='' onClick={() => {scrollToSection('Projects'); toggleMenu();}}>
                 Projects
               </button>
             </li>
             <li className="text-xl py-1">
-              <button className='' onClick={() => scrollToSection('Contact')}>
+              <button className='' onClick={() => {scrollToSection('Contact'); toggleMenu();}}>
                 Contact
               </button>
             </li>
