@@ -1,11 +1,12 @@
 // import ProfilePic from "../../public/img/avatar.svg";
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Techstack from "@/components/Techstack/Techstack";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import WelcomeBanner from "@/components/WelcomeBanner/WelcomeBanner";
 import About from './About';
+import { ToggleBtn } from '@/components/ToggleBtn/ToggleBtn';
 
 export default function Home() {
 
@@ -40,7 +41,9 @@ export default function Home() {
   return (
     <>
       <title>Vanessa Martinez Romero</title>
-      <Header scrollToSection={scrollToSection} />      
+      <Header scrollToSection={scrollToSection} />
+      
+
       <div className="mx-auto w-full sm:w-11/12 md:w-3/4 p-4">
         {/* Home Section */}
         <div ref={homeRef}>
