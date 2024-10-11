@@ -6,7 +6,6 @@ import Techstack from "@/components/Techstack/Techstack";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import WelcomeBanner from "@/components/WelcomeBanner/WelcomeBanner";
 import About from './About';
-import { ToggleBtn } from '@/components/ToggleBtn/ToggleBtn';
 
 export default function Home() {
 

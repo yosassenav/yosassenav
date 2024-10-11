@@ -1,8 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
+import { ToggleBtn } from '../ToggleBtn/ToggleBtn';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { ThemeContext } from '@/context/ThemeContext';
 
 export default function Header({ scrollToSection }) {
+
+  const {theme, toggleTheme} = useContext(ThemeContext);
+
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -71,6 +76,9 @@ export default function Header({ scrollToSection }) {
               <button className='text-xl' onClick={() => scrollToSection('Contact')}>
                 Contact
               </button>
+            </li>
+            <li className="my-6 mx-8 basis-12">
+              <ToggleBtn theme={theme} toggleTheme={toggleTheme}/>
             </li>
           </ul>
         </header>
