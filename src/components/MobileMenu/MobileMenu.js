@@ -1,10 +1,8 @@
-import { ThemeContext } from "@/context/ThemeContext";
 import { ToggleBtn } from "../ToggleBtn/ToggleBtn";
 import { FaTimes } from "react-icons/fa";
 
 export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection }) {
 
-  const {theme, toggleTheme} = useContext(ThemeContext);
 
   return (
     <>
@@ -41,7 +39,7 @@ export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection }) 
                 Contact
               </button>
             </li>
-             <ToggleBtn theme={theme} toggleTheme={toggleTheme}/>
+             <ToggleBtn/>
           </ul>
         </div>
       )}

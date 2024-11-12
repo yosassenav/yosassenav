@@ -1,8 +1,13 @@
+import { ThemeContext } from "@/context/ThemeContext";
+import { useContext } from "react";
 
-export const ToggleBtn = ({theme, toggleTheme}) => {
+export const ToggleBtn = () => {
+
+    const { theme, toggleTheme } = useContext(ThemeContext)
+
     return (
        <button onClick={toggleTheme} style={buttonStyle}>
-            {theme === 'light' ? '🌙 Dark Mode': '☀️ Light Mode'}
+            {theme === 'light' ? 'Dark Mode': 'Light Mode'}
         </button>
     )
 }

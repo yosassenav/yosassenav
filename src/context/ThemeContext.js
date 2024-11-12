@@ -1,4 +1,4 @@
-import { useContext } from "react/cjs/react.production.min"
+import { createContext } from 'react'
 
 //Creating context to set the default theme
-export const ThemeContext = useContext();
+export const ThemeContext = createContext();
