@@ -1,4 +1,3 @@
-import { ToggleBtn } from "../ToggleBtn/ToggleBtn";
 import { FaTimes } from "react-icons/fa";
 
 export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection }) {
@@ -39,7 +38,6 @@ export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection }) 
                 Contact
               </button>
             </li>
-             <ToggleBtn/>
           </ul>
         </div>
       )}

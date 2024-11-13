@@ -7,6 +7,7 @@ const roboto = Roboto({
 });
 
 export default function App({ Component, pageProps }) {
+  
   return (
     <main className={roboto.className}>
       <Component {...pageProps} />
