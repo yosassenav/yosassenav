@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { FaTimes } from "react-icons/fa";
 
 export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection }) {
