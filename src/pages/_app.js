@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import { ThemeProvider } from "@/context/ThemeProvider";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
@@ -9,8 +10,11 @@ const roboto = Roboto({
 export default function App({ Component, pageProps }) {
   
   return (
-    <main className={roboto.className}>
-      <Component {...pageProps} />
-    </main>
+    <ThemeProvider>
+      <main className={roboto.className}>
+        <Component {...pageProps} />
+      </main>
+    </ThemeProvider>
+   
   );
 }
