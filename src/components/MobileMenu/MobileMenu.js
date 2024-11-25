@@ -1,4 +1,5 @@
 import { FaTimes } from "react-icons/fa";
+import { ToggleBtn } from "../ToggleBtn/ToggleBtn";
 
 export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection }) {
 
@@ -37,6 +38,9 @@ export default function MobileMenu({ isMenuOpen, toggleMenu, scrollToSection }) 
               <button className='' onClick={() => {scrollToSection('Contact'); toggleMenu();}}>
                 Contact
               </button>
+            </li>
+            <li className="text-xl py-1">
+              <ToggleBtn/>
             </li>
           </ul>
         </div>

@@ -75,10 +75,12 @@ export default function Header({ scrollToSection }) {
                 Contact
               </button>
             </li>
-            <li className="my-6 mx-8 basis-12">
+            <li className='my-6 mx-8 basis-12'>
               <ToggleBtn/>
             </li>
           </ul>
+         
+         
         </header>
       )}
     </>
